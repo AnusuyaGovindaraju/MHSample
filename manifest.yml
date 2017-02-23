@@ -4,5 +4,6 @@ applications:
   instances: 1
   domain: mybluemix.net
   name: MHSample
+  
   host: MHSample
   disk_quota: 1024M
