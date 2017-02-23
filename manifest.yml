@@ -1,9 +1,8 @@
 applications:
-- path: MHSample-0.0.1-SNAPSHOT.jar
+- path: target/MHSample-0.0.1-SNAPSHOT.jar
   memory: 512M
   instances: 1
   domain: mybluemix.net
   name: MHSample
-  
   host: MHSample
   disk_quota: 1024M
