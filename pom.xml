@@ -29,6 +29,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/com.ibm.mqlight/mqlight-api -->
+	<dependency>
+    	<groupId>com.ibm.mqlight</groupId>
+    	<artifactId>mqlight-api</artifactId>
+    	<version>1.0.2016062300</version>
+	</dependency>
+		
 	
   		<dependency>
 			<groupId>org.springframework.boot</groupId>
