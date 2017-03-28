@@ -1,8 +1,9 @@
 ---
 applications:
-- name: MHSample
+- name: MQBackend
+  buildpack: java_buildpack
   services:
   - Message Hub-u4
-- name: MQL.sample.java.frontend
+- name: MQFrontEnd
   services:
   - Message Hub-u4

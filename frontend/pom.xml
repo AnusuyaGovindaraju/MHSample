@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cts.db</groupId>
-	<artifactId>MHSample</artifactId>
+	<artifactId>MQFrontEnd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>MHSample</name>
-	<description>MHSample</description>
+	<name>MQFrontEnd</name>
+	<description>MQFrontEnd</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

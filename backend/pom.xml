@@ -2,11 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.ibm.mqlight.sample</groupId>
-  <artifactId>BackendWorker</artifactId>
-  <version>1.0</version>
+  <artifactId>MQBackend</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>BackendWorker</name>
+  <name>MQBackend</name>
   <url>https://developer.ibm.com/messaging/mq-light/</url>
 
   <properties>
