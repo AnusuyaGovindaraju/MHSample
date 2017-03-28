@@ -1,8 +1,17 @@
+---
 applications:
-- path: target/MHSample-0.0.1-SNAPSHOT.jar
-  memory: 512M
+- name: MQL.sample.java.backend
+  memory: 256M
+  instances: 2
+  no-route: true
+  path: backend/target/BackendWorker-1.0-jar-with-dependencies.jar
+  buildpack: java_buildpack
+  health-check-type: none
+  services:
+  - Message Hub-u4
+- name: MQL.sample.java.frontend
+  memory: 256M
   instances: 1
-  domain: mybluemix.net
-  name: MHSample
-  host: MHSample
-  disk_quota: 1024M
+   buildpack: liberty-for-java
+  services:
+  - Message Hub-u4
