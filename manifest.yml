@@ -1,17 +1,8 @@
 ---
 applications:
-- name: MQL.sample.java.backend
-  memory: 256M
-  instances: 2
-  no-route: true
-  path: backend/target/BackendWorker-1.0-jar-with-dependencies.jar
-  buildpack: java_buildpack
-  health-check-type: none
+- name: MHSample
   services:
   - Message Hub-u4
 - name: MQL.sample.java.frontend
-  memory: 256M
-  instances: 1
-   buildpack: liberty-for-java
   services:
   - Message Hub-u4
