@@ -17,7 +17,7 @@
     <dependency>
       <groupId>com.ibm.mqlight</groupId>
       <artifactId>mqlight-api</artifactId>
-      <version>LATEST</version>
+      <version>1.0.2016062300</version>
     </dependency>
   <dependency>
       <groupId>org.slf4j</groupId>

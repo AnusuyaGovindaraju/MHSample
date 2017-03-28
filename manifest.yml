@@ -2,6 +2,7 @@
 applications:
 - name: MQBackend
   buildpack: java_buildpack
+  path: backend/target/MQBackend-1.0-jar-with-dependencies.jar
   services:
   - Message Hub-u4
 - name: MQFrontEnd
