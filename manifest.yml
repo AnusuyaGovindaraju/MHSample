@@ -2,7 +2,8 @@
 applications:
 - name: MQBackend
   buildpack: liberty-for-java
-  path: backend/target/MQBackend-1.0-jar-with-dependencies.jar
+  path: target/MQBackend-1.0-jar-with-dependencies.jar
+  health-check-type: none
   services:
   - Message Hub-u4
   
