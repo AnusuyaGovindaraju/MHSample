@@ -156,6 +156,11 @@ public class MHFrontEndTask{
 	public NonBlockingClient getMQClient(){
 		return mqlightClient;
 	}
+	
+	public LinkedList<String> getReceivedMessages(){
+		return receivedMessages;
+	}
+	
    
     
 }
