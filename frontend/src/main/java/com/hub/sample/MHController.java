@@ -101,7 +101,12 @@ public class MHController {
         com.google.gson.JsonObject message = new com.google.gson.JsonObject();
         message.addProperty("word", word);
         message.addProperty("frontend", "JavaAPI: " + toString());
-
+        
+		if(mqlightClient==null)
+		{
+			System.out.println("MQlightclient is null");
+		}
+			System.out.println("message: "+message+"  mqlightClient"+mqlightClient);
         mqlightClient.send(PUBLISH_TOPIC, message.toString(), null, opts, new CompletionListener<Void>() {
           public void onSuccess(NonBlockingClient client, Void context) {
             logger.info("Client id: " + client.getId() + " sent message!");
