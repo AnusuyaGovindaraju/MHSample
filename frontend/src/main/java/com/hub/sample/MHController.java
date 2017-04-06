@@ -72,7 +72,8 @@ public class MHController {
 	@RequestMapping(value = "/words", method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE}, consumes = MediaType.ALL_VALUE)
      public ResponseEntity publishWords(Map<String, String> jsonInput) {
         
-      logger.info("Publishing words" + jsonInput);
+      System.out.println("Publishing words"+jsonInput);
+	  logger.info("Publishing words" + jsonInput);
       
       // Check the caller supplied some words
       String words = jsonInput.get("words");
