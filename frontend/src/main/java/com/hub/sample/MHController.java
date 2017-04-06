@@ -69,7 +69,7 @@ public class MHController {
      * POST on the words resource publishes the content of the POST to our topic
      */
     
-	@RequestMapping(value = "/words", method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE}, consumes = MediaType.ALL_VALUE)
+	@RequestMapping(value = "/words", method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE}, consumes =  MediaType.APPLICATION_JSON_VALUE)
      public ResponseEntity publishWords(Map<String, String> jsonInput) {
         
       System.out.println("Publishing words"+jsonInput);
