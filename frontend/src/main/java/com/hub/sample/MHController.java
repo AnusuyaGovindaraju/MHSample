@@ -69,14 +69,14 @@ public class MHController {
      * POST on the words resource publishes the content of the POST to our topic
      */
     
-	@RequestMapping(value = "/words", method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE}, consumes =  MediaType.APPLICATION_JSON_VALUE)
-     public ResponseEntity publishWords(Map<String, String> jsonInput) {
+	@RequestMapping(value = "/words", method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE})
+     public ResponseEntity publishWords(String words) {
         
       System.out.println("Publishing words"+jsonInput);
 	  logger.info("Publishing words" + jsonInput);
       
       // Check the caller supplied some words
-      String words = jsonInput.get("words");
+      //String words = jsonInput.get("words");
       if (words == null) throw new RuntimeException("No words sent");
 
       // Before we connect to publish, we need to ensure our subscription has been
