@@ -141,7 +141,6 @@ public class MHController {
    */
     private synchronized ResponseEntity singleThreadedCheckForPublications() {
       ResponseEntity response;
-	   
 	  receivedMessages= objFrontEndTask.getReceivedMessages();
       if (receivedMessages == null || receivedMessages.isEmpty()) {
         response = new ResponseEntity(null, HttpStatus.OK);
