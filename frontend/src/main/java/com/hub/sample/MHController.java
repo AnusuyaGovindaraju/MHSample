@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -70,7 +71,7 @@ public class MHController {
      */
     
 	@RequestMapping(value = "/words", method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE})
-     public ResponseEntity publishWords(String words) {
+     public ResponseEntity publishWords(@RequestBody String words) {
         
       System.out.println("Publishing words"+words);
 	  logger.info("Publishing words" + words);
