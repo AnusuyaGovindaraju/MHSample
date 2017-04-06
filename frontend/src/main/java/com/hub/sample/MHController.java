@@ -141,6 +141,12 @@ public class MHController {
    */
     private synchronized ResponseEntity singleThreadedCheckForPublications() {
       ResponseEntity response;
+	  if(mqlightClient==null)
+		{
+			mqlightClient=objFrontEndTask.getMQClient();
+		}
+		
+	  receivedMessages= mqlightClient.getReceivedMessages();
       if (receivedMessages == null || receivedMessages.isEmpty()) {
         response = new ResponseEntity(null, HttpStatus.OK);
         return response;
