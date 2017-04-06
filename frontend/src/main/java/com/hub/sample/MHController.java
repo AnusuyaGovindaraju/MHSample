@@ -104,10 +104,10 @@ public class MHController {
         
 		if(mqlightClient==null)
 		{
-			System.out.println("MQlightclient is null");
+			mqlightClient=objFrontEndTask.getMQClient();
 		}
-			System.out.println("message: "+message+"  mqlightClient"+mqlightClient);
-        mqlightClient.send(PUBLISH_TOPIC, message.toString(), null, opts, new CompletionListener<Void>() {
+		  System.out.println("message: "+message+"  mqlightClient"+mqlightClient);
+          mqlightClient.send(PUBLISH_TOPIC, message.toString(), null, opts, new CompletionListener<Void>() {
           public void onSuccess(NonBlockingClient client, Void context) {
             logger.info("Client id: " + client.getId() + " sent message!");
           }

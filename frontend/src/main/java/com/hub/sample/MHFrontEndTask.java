@@ -152,6 +152,10 @@ public class MHFrontEndTask{
 	public boolean getSubInitialised(){
 		return subInitialised;
 	}
+	
+	public NonBlockingClient getMQClient(){
+		return mqlightClient;
+	}
    
     
 }
